@@ -44,7 +44,7 @@ def consolidate_cart(cart)
        price: items[:price],
        clearance: items[:clearance],
 <<<<<<< HEAD
-       :count=> 1
+       :count=> 1}
 =======
        count: 1
 >>>>>>> 93b2fad407018be3e6ac72c04589073a6a7fa3fa
