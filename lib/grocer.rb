@@ -23,18 +23,31 @@ def consolidate_cart(cart)
   # REMEMBER: This returns a new Array that represents the cart. Don't merely
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   new_cart=[]
+<<<<<<< HEAD
   cart.map do |items|
     #binding.pry
    new_cart_item = find_item_by_name_in_collection(items,cart)
    if new_cart_item != nil 
      new_cart_item[:count] += 1
      #issue right here
+=======
+  counter=0
+  cart.each do |items|
+    #binding.pry
+   new_cart_item = find_item_by_name_in_collection(items,cart)
+   if new_cart_item!=nil 
+     new_cart_item[:count]+=1
+>>>>>>> 93b2fad407018be3e6ac72c04589073a6a7fa3fa
    else
      new_cart_item= {
        item: items[:item],
        price: items[:price],
        clearance: items[:clearance],
+<<<<<<< HEAD
        :count=> 1
+=======
+       count: 1
+>>>>>>> 93b2fad407018be3e6ac72c04589073a6a7fa3fa
        
      }
    new_cart << new_cart_item
